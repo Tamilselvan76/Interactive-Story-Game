@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORY GAME</title> <link rel="stylesheet" href="style.css"> 
+  </head> 
+  <body> 
+    <div class="auth-container"> 
+      <h1>Interactive Story Game</h1> 
+      <!-- Signup Form --> 
+       <div id="signup-box"> 
+        <h2>Signup</h2> 
+        <input type="text" id="signupUsername" placeholder="Username" required> 
+        <input type="password" id="signupPassword" placeholder="Password" required> 
+        <button onclick="signup()">Signup</button> 
+        <p>Already have an account? <a href="#" onclick="toggleAuth('login')">Login here</a></p> 
+      </div>
+      <!-- Login Form --> 
+       <div id="login-box" style="display:none;"> 
+        <h2>Login</h2> <input type="text" id="loginUsername" placeholder="Username" required> 
+        <input type="password" id="loginPassword" placeholder="Password" required> 
+        <button onclick="login()">Login</button> 
+        <p>Don't have an account? <a href="#" onclick="toggleAuth('signup')">Signup here</a></p> 
+      </div> 
+    </div> 
+    <script src="auth.js"></script> 
+  </body> 
+  </html>
